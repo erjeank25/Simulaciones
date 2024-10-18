@@ -50,7 +50,7 @@ class InterfazSimulacionTermica(ctk.CTk):
         self.campos = [
             ("Q_gen", "Q_gen (W):"), ("k", "k (W/°C):"), ("T_cool", "T_cool (°C):"), ("C", "C (J/°C):"),
             ("T0", "T0 (°C):"), ("tiempo_min", "Tiempo mínimo (min):"), 
-            ("tiempo_max", "Tiempo máximo (min):"), ("puntos", "Puntos de tiempo:")
+            ("tiempo_max", "Tiempo máximo (max):"), ("puntos", "Puntos de tiempo:")
         ]
 
         for i, (campo, texto) in enumerate(self.campos):

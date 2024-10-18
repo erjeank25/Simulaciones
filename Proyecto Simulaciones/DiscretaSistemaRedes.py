@@ -47,7 +47,7 @@ class NetworkSimulationApp(ctk.CTk):
         errors = []
         for name, entry in self.entries.items():
             try:
-                value = int(entry.get())
+                value = float(entry.get())
                 if value <= 0:
                     errors.append(f"{name} debe ser un número entero positivo.")
             except ValueError:
@@ -93,7 +93,7 @@ class NetworkSimulationApp(ctk.CTk):
         CAPACIDAD_COLA = int(self.entries['capacidad_cola'].get())
         TIEMPO_PROCESAMIENTO_MIN = int(self.entries['tiempo_procesamiento_min'].get())
         TIEMPO_PROCESAMIENTO_MAX = int(self.entries['tiempo_procesamiento_max'].get())
-        TIEMPO_LLEGADAS = int(self.entries['tiempo_llegadas'].get())
+        TIEMPO_LLEGADAS = float(self.entries['tiempo_llegadas'].get())
         TOTAL_PAQUETES = int(self.entries['total_paquetes'].get())
 
         # Variables para seguimiento de estadísticas
